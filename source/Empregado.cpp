@@ -22,3 +22,19 @@ float Empregado::calcularSalario()
 {
     return salarioBase - (salarioBase * (imposto/100));
 }
+
+float Empregado::getImposto()
+{
+    return imposto;
+}
+
+float Empregado::getSalarioBase()
+{
+    return salarioBase;
+}
+
+int Empregado::getCodSetor()
+{
+    return codSetor;
+}
+

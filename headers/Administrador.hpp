@@ -8,7 +8,10 @@ using namespace std;
 class Administrador : public Empregado
 {
     public:
-        Administrador(){};
+        Administrador(string nome, string telefone, string  endereco, int codSetor, float salarioBase, float imposto, float ajudaDeCusto) : Empregado(nome, telefone, endereco, codSetor, salarioBase, imposto)
+        {
+            this->ajudaDeCusto = ajudaDeCusto;
+        };
         void setAjudaDeCusto(float ajudaDeCusto);
         
         float calcularSalario();

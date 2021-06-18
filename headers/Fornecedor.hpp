@@ -6,7 +6,11 @@
 class Fornecedor : public Pessoa
 {
     public:
-        Fornecedor(string nome, string telefone, string endereco) : Pessoa(nome, telefone, endereco){};
+        Fornecedor(string nome, string telefone, string endereco, float valorCredito, float valorDivida) : Pessoa(nome, telefone, endereco)
+        {
+            this->valorCredito = valorCredito;
+            this->valorDivida = valorDivida;
+        };
         Fornecedor(){};
         float obterSaldo();
         void setValorDivida(float valorDivida);

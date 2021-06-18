@@ -7,7 +7,13 @@ using namespace std;
 class Empregado : public Pessoa
 {
     public:
-        Empregado(string nome, string telefone, string endereco) : Pessoa(nome, telefone, endereco){};
+        Empregado(string nome, string telefone, string endereco, int codSetor, float salarioBase, float imposto) : Pessoa(nome, telefone, endereco)
+        {
+            this->codSetor = codSetor;
+            this->salarioBase = salarioBase;
+            this-> imposto = imposto;  
+        };
+        
         Empregado(){};
 
         virtual float calcularSalario();
