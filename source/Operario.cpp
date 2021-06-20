@@ -10,6 +10,14 @@ void Operario::setComissao(float comissao)
     this->comissao = comissao;
 }
 
+void Operario::imprime()
+{
+    Empregado::imprime();
+    cout << "Valor Produção: R$" << valorProducao << endl;
+    cout << "Comissão: R$" << comissao << endl;
+    cout << "Salário Líquido: R$" << calcularSalario() << endl;
+}
+
 float Operario::calcularSalario()
 {
     float pct_prod = (comissao/100) * valorProducao;

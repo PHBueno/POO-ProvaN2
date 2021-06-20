@@ -17,9 +17,10 @@ class Vendedor : public Empregado
         float calculaSalario();
         float getValorVenda();
         float getComissao();
-        
+
         void setValorVenda(float valorVenda);
         void setComissao(float comissao);
+        void imprime();
 
 
     private:

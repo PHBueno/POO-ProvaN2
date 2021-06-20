@@ -25,6 +25,13 @@ void Pessoa::setTelefone(string telefone)
     this->telefone = telefone;
 }
 
+void Pessoa::imprime()
+{
+    cout << "Nome: " << nome << endl;
+    cout << "Telefone: " << telefone << endl;
+    cout << "Endereco: " << endereco << endl;
+}
+
 string Pessoa::getNome()
 {
     return this->nome;
@@ -39,3 +46,4 @@ string Pessoa::getTelefone()
 {
     return this->telefone;
 }
+

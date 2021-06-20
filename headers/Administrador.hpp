@@ -13,6 +13,7 @@ class Administrador : public Empregado
             this->ajudaDeCusto = ajudaDeCusto;
         };
         void setAjudaDeCusto(float ajudaDeCusto);
+        void imprime();
         
         float calcularSalario();
         float getAjudaDeCusto();

@@ -21,6 +21,7 @@ class Empregado : public Pessoa
         void setCodSetor(int codSetor);
         void setSalarioBase(float salarioBase);
         void setImposto(float imposto);
+        void imprime();
 
         int getCodSetor();
         float getSalarioBase();

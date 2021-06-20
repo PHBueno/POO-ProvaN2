@@ -12,9 +12,12 @@ class Fornecedor : public Pessoa
             this->valorDivida = valorDivida;
         };
         Fornecedor(){};
+
         float obterSaldo();
+
         void setValorDivida(float valorDivida);
         void setValorCredito(float valorCredito);
+        void imprime();
     private:
         float valorCredito;
         float valorDivida;

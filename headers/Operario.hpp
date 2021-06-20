@@ -16,12 +16,13 @@ class Operario : public Empregado
         };
         void setValorProducao(float valorProducao);
         void setComissao(float comissao);
+        void imprime();
 
 
         float calcularSalario();
         float getValorProducao();
         float getComissao();
-        
+
     private:
         float valorProducao;
         float comissao;

@@ -13,6 +13,7 @@ class Pessoa
         void setNome(string nome);
         void setEndereco(string endereco);
         void setTelefone(string telefone);
+        virtual void imprime();
 
         string getNome();
         string getEndereco();
